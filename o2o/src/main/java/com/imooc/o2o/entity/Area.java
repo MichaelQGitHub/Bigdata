@@ -1,0 +1,67 @@
+package com.imooc.o2o.entity;
+
+import java.sql.Date;
+
+/**
+ * 區域信息
+ * @author Administrator
+ *
+ */
+public class Area {
+	
+	/**
+	 * 此处如果使用基本类型，会赋初值，不希望被添加一个初值，所以使用引用类型
+	 */
+	
+	// 主键ID
+	private Integer areaId;
+	// 名称
+	private String areaName;
+	// 权重，越大越排前显示
+	private Integer priority;
+	// 创建时间
+	private Date createTime;
+	// 更新时间
+	private Date lastEditTime;
+
+	public Integer getAreaId() {
+		return areaId;
+	}
+
+	public void setAreaId(Integer areaId) {
+		this.areaId = areaId;
+	}
+
+	public String getAreaName() {
+		return areaName;
+	}
+
+	public void setAreaName(String areaName) {
+		this.areaName = areaName;
+	}
+
+	public Integer getPriority() {
+		return priority;
+	}
+
+	public void setPriority(Integer priority) {
+		this.priority = priority;
+	}
+
+	public Date getCreateTime() {
+		return createTime;
+	}
+
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
+	}
+
+	public Date getLastEditTime() {
+		return lastEditTime;
+	}
+
+	public void setLastEditTime(Date lastEditTime) {
+		this.lastEditTime = lastEditTime;
+	}
+
+}
